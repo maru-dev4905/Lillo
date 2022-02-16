@@ -46,6 +46,7 @@ table {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Spoqa Han Sans Neo";
 }
 a{
     color: inherit;
@@ -55,5 +56,16 @@ button{
     background: none;
     border: none;
     outline: none;
+    cursor: pointer;
+}
+svg{
+    pointer-events: auto !important;
+    cursor: pointer;
+}
+embed{
+    pointer-events: auto;
+    cursor: pointer;
+}
+iframe{
     cursor: pointer;
 }
