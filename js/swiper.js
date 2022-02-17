@@ -29,4 +29,10 @@ $(document).ready(function(){
             $(".pushAlarm-slide").addClass("before");
         }
     });
+
+    var screenshotSlide = new Swiper(".screenshot-list", {
+        slidesPerView: "auto",
+        spaceBetween:30,
+        speed:750,
+    });
 });
