@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lillo | 푸시알림</title>
+    
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1 class="logo">
+            <a href="#">
+                <img src="./images/common/logo.svg" alt="logo">
+            </a>
+        </h1>
+        <div class="event-slide swiper">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <p>푸시알림 마케팅 대시보드 서비스, 릴로 베타 OPEN!</p>
+                </li>
+                <li class="swiper-slide">
+                    <p>푸시알림 마케팅 대시보드 서비스, 릴로 베타 OPEN!</p>
+                </li>
+                <li class="swiper-slide">
+                    <p>푸시알림 마케팅 대시보드 서비스, 릴로 베타 OPEN!</p>
+                </li>
+                <li class="swiper-slide">
+                    <p>푸시알림 마케팅 대시보드 서비스, 릴로 베타 OPEN!</p>
+                </li>
+            </ul>
+            <button class="event-slide-btn">
+                <img src="./images/icon/ico-upDownArrow.svg" alt="upDown group arrow">
+            </button>
+        </div>
+        <div class="menu">
+            <div class="push-alarm-wrap">
+                <button class="push-alarm-btn">
+                    <span>푸시 알림 만들기</span>
+                    <img src="./images/icon/ico-bottomWhiteArrow.svg" alt="bottom white arrow">
+                </button>
+                <ul class="push-alarm-content">
+                    <li>
+                        <a href="#">일반 푸시 만들기</a>
+                    </li>
+                    <li>
+                        <a href="#">일반 푸시 만들기</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="alarm-btn">
+                <img src="./images/icon/ico-alarm.svg" alt="alarm">
+            </button>
+            <button class="darkmode-btn">
+                <img src="./images/icon/ico-moon.svg" alt="moon">
+            </button>
+            <div class="profile-wrap">
+                <button class="profile-btn">
+                    <img src="./images/visual/profile.png" alt="profile">
+                    <img src="./images/icon/ico-bottomGrayArrow.svg" alt="bottom gray arrow">
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="aside">
+            <nav class="gnb">
+                <ul>
+                    <li>
+                        <a href="./dashbord.html">
+                            <img src="./images/icon/ico-dashbord.svg" alt="icon dashbord">
+                            대시보드
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="./pushAlarm.html">
+                            <img src="./images/icon/ico-pushAlarm.svg" alt="icon pushAlarm">
+                            푸시 알림
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/icon/ico-user.svg" alt="icon user">
+                            사용자
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./appSetting.html">
+                            <img src="./images/icon/ico-setting.svg" alt="icon settingico-setting.svg">
+                            앱 설정
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <div class="upgrade">
+                    <div class="upgrade-graph">
+                        <img src="./images/graph/upgrade-graph.png" alt="graph">
+                        <div class="upgrade-graph-text">
+                            <h2>
+                                <span>4.2K</span>
+                                /10K
+                            </h2>
+                            <p>베이직</p>
+                        </div>
+                    </div>
+                    <button class="upgrade-btn">
+                        업그레이드
+                        <img src="./images/icon/ico-rightOrangeArrow.svg" alt="right orange arrow">
+                    </button>
+                    <p class="copyright">
+                        (c) lillo.co.kr
+                    </p>
+                </div>
+            </footer>
+        </div>
+        <section class="content">
+            <div class="inner">
+                <div class="sec-title">
+                    <h2>
+                        <span>푸시 알림</span>                  
+                    </h2>
+                </div>
+                <div class="filter">
+                    <div class="left">
+                        <div class="select">
+                            <button class="selectTop">
+                                <span>모든유형</span>
+                                <img src="./images/icon/ico-selectArrow.svg" alt="bottom select arrow">
+                            </button>
+                            <ul class="selectContent">
+                                <li>
+                                    <button class="selectBtn">모든유형</button>
+                                </li>
+                                <li>
+                                    <button class="selectBtn">작성중</button>
+                                </li>
+                                <li>
+                                    <button class="selectBtn">자동알림</button>
+                                </li>
+                                <li>
+                                    <button class="selectBtn">발송대기</button>
+                                </li>
+                                <li>
+                                    <button class="selectBtn">발송완료</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="select">
+                            <button class="selectTop">
+                                <span>모든 상태</span>
+                                <img src="./images/icon/ico-selectArrow.svg" alt="bottom select arrow">
+                            </button>
+                            <ul class="selectContent">
+                                <li>
+                                    <button class="selectBtn">모든 상태</button>
+                                </li>
+                                <li>
+                                    <button class="selectBtn">작성중</button>
+                                </li>
+                                <li>
+                                    <button class="selectBtn">자동알림</button>
+                                </li>
+                                <li>
+                                    <button class="selectBtn">발송대기</button>
+                                </li>
+                                <li>
+                                    <button class="selectBtn">발송완료</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="select">
+                            <button class="selectTop">
+                                <span>전체 기간</span>
+                                <img src="./images/icon/ico-selectArrow.svg" alt="bottom select arrow">
+                            </button>
+                            <ul class="selectContent">
+                                <li>
+                                    <button class="selectBtn">전체 기간</button>
+                                </li>
+                                <li>
+                                    <button class="selectBtn">당일</button>
+                                </li>
+                                <li>
+                                    <button class="selectBtn">일주일 이내</button>
+                                </li>
+                                <li>
+                                    <button class="selectBtn">한달 이내</button>
+                                </li>
+                                <li>
+                                    <button class="selectBtn">일년 이내</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="select">
+                            <button class="selectTop">
+                                <span>최근 생성 순</span>
+                                <img src="./images/icon/ico-selectArrow.svg" alt="bottom select arrow">
+                            </button>
+                            <ul class="selectContent">
+                                <li>
+                                    <button class="selectBtn">최근 생성 순</button>
+                                </li>
+                                <li>
+                                    <button class="selectBtn">당일</button>
+                                </li>
+                                <li>
+                                    <button class="selectBtn">일주일 이내</button>
+                                </li>
+                                <li>
+                                    <button class="selectBtn">한달 이내</button>
+                                </li>
+                                <li>
+                                    <button class="selectBtn">일년 이내</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <button class="search-btn">
+                            <img src="./images/icon/ico-search.svg" alt="search">
+                        </button>
+                        <button class="bookmark-btn">
+                            <img src="./images/icon/ico-bookmark.svg" alt="bookmark">
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="row">
+                   <ul class="pushAlarm-list">
+                        <li>
+                            <a href="./writing_campaign.html">
+                                <div class="pushAlarm-state state-ing">
+                                    <img src="./images/icon/ico-ing.svg" alt="icon ing">
+                                    <span>작성중</span>
+                                </div>
+                                <div class="pushAlarm-title">
+                                    <h3>장바구니에 구매하지 않은 상품이 있네요!</h3>
+                                    <ul>
+                                        <li>
+                                            <span>#장바구니 제품 구매 유도</span>
+                                        </li>
+                                        <li>
+                                            <span>#직접발송</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <ul class="pushAlarm-desc">
+                                    <li>
+                                        <span>클릭률</span>
+                                        <h3>0%</h3>
+                                    </li>
+                                    <li>
+                                        <span>평균 세션</span>
+                                        <h3>0</h3>
+                                    </li>
+                                    <li>
+                                        <span>평균 체류 시간</span>
+                                        <h3>0min</h3>
+                                    </li>
+                                </ul>
+                            </a>
+                            <button class="bookmark-btn">
+                                <img src="./images/icon/ico-bookmark.svg" alt="icon bookmark">
+                            </button>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="pushAlarm-state state-success">
+                                    <img src="./images/icon/ico-success.svg" alt="icon ing">
+                                    <span>발송완료</span>
+                                </div>
+                                <div class="pushAlarm-title">
+                                    <h3>킵프렌즈 기저귀 킵토리 적립금 이벤트</h3>
+                                    <ul>
+                                        <li>
+                                            <span>#DIY</span>
+                                        </li>
+                                        <li>
+                                            <span>#직접발송</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <ul class="pushAlarm-desc">
+                                    <li>
+                                        <span>클릭률</span>
+                                        <h3>13.5%</h3>
+                                    </li>
+                                    <li>
+                                        <span>평균 세션</span>
+                                        <h3>10</h3>
+                                    </li>
+                                    <li>
+                                        <span>평균 체류 시간</span>
+                                        <h3>3min 21sec</h3>
+                                    </li>
+                                </ul>
+                            </a>
+                            <button class="bookmark-btn">
+                                <img src="./images/icon/ico-bookmark.svg" alt="icon bookmark">
+                            </button>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="pushAlarm-state state-auto">
+                                    <img src="./images/icon/ico-auto.svg" alt="icon ing">
+                                    <span>자동알림</span>
+                                </div>
+                                <div class="pushAlarm-title">
+                                    <h3>킵프렌즈 기저귀 킵토리 적립금 이벤트</h3>
+                                    <ul>
+                                        <li>
+                                            <span>#DIY</span>
+                                        </li>
+                                        <li>
+                                            <span>#직접발송</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <ul class="pushAlarm-desc">
+                                    <li>
+                                        <span>클릭률</span>
+                                        <h3>13.5%</h3>
+                                    </li>
+                                    <li>
+                                        <span>평균 세션</span>
+                                        <h3>10</h3>
+                                    </li>
+                                    <li>
+                                        <span>평균 체류 시간</span>
+                                        <h3>3min 21sec</h3>
+                                    </li>
+                                </ul>
+                            </a>
+                            <button class="bookmark-btn">
+                                <img src="./images/icon/ico-bookmark.svg" alt="icon bookmark">
+                            </button>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="pushAlarm-state state-wating">
+                                    <img src="./images/icon/ico-wating.svg" alt="icon ing">
+                                    <span>발송대기</span>
+                                </div>
+                                <div class="pushAlarm-title">
+                                    <h3>킵프렌즈 기저귀 킵토리 적립금 이벤트</h3>
+                                    <ul>
+                                        <li>
+                                            <span>#DIY</span>
+                                        </li>
+                                        <li>
+                                            <span>#직접발송</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <ul class="pushAlarm-desc">
+                                    <li>
+                                        <span>클릭률</span>
+                                        <h3>13.5%</h3>
+                                    </li>
+                                    <li>
+                                        <span>평균 세션</span>
+                                        <h3>10</h3>
+                                    </li>
+                                    <li>
+                                        <span>평균 체류 시간</span>
+                                        <h3>3min 21sec</h3>
+                                    </li>
+                                </ul>
+                            </a>
+                            <button class="bookmark-btn">
+                                <img src="./images/icon/ico-bookmark.svg" alt="icon bookmark">
+                            </button>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="pushAlarm-state state-success">
+                                    <img src="./images/icon/ico-success.svg" alt="icon ing">
+                                    <span>발송완료</span>
+                                </div>
+                                <div class="pushAlarm-title">
+                                    <h3>킵프렌즈 기저귀 킵토리 적립금 이벤트</h3>
+                                    <ul>
+                                        <li>
+                                            <span>#DIY</span>
+                                        </li>
+                                        <li>
+                                            <span>#직접발송</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <ul class="pushAlarm-desc">
+                                    <li>
+                                        <span>클릭률</span>
+                                        <h3>13.5%</h3>
+                                    </li>
+                                    <li>
+                                        <span>평균 세션</span>
+                                        <h3>10</h3>
+                                    </li>
+                                    <li>
+                                        <span>평균 체류 시간</span>
+                                        <h3>3min 21sec</h3>
+                                    </li>
+                                </ul>
+                            </a>
+                            <button class="bookmark-btn">
+                                <img src="./images/icon/ico-bookmark.svg" alt="icon bookmark">
+                            </button>
+                        </li>
+                   </ul>
+                </div>
+                <div class="pagination">
+                    <ul>
+                        <!-- <li class="pagination-prev">
+                            <a href="#">
+                                <img src="./images/icon/ico-pagination-prev.svg" alt="right black arrow">
+                            </a>
+                        </li> -->
+                        <li class="active">
+                            <a href="#">1</a>
+                        </li>
+                        <li>
+                            <a href="#">2</a>
+                        </li>
+                        <li>
+                            <a href="#">3</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/icon/ico-ing.svg" alt="ing">
+                            </a>
+                        </li>
+                        <li class="pagination-next">
+                            <a href="#">
+                                <img src="./images/icon/ico-pagination-next.svg" alt="right black arrow">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- <p class="pos-text">기분이 좋아지는 걸 떠올리고 하루종일 반복하여 생각하세요.</p> -->
+    <img class="pos-img" src="./images/visual/bg-text.png" alt="bg text">
+    
+    <script src="./js/btnClick.js"></script>
+    <script src="./js/select.js"></script>
+</body>
+</html>
