@@ -142,12 +142,12 @@
                         <ul>
                             <li>
                                 <p>앱 이름</p>
-                                <input type="text">
+                                <input type="text" id="appName" minlength="0" maxlength="30">
                                 <span>0/30</span>
                             </li>
                             <li>
-                                <p>앱 이름</p>
-                                <input type="text">
+                                <p>간단한 설명</p>
+                                <input type="text" id="appDesc" minlength="0" maxlength="80">
                                 <span>0/80</span>
                             </li>
                         </ul>
@@ -183,6 +183,21 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="right">
+                        <div class="appSetting-example">
+                            <div class="appIcon">
+                                <img src="./images/visual/app01.png" alt="app icon">
+                            </div>
+                            <div class="appText">
+                                <h4 class="appTitle">
+                                    앙블랑몰
+                                </h4>
+                                <p class="appDesc">
+                                    안전을 더한 기저귀, 아기 물티슈 앙블랑
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="appSetting-col">
                     <div class="left">
@@ -205,13 +220,13 @@
                                         <span>기본</span>
                                     </div>
                                     <div class="theme-btn">
-                                        <button class="default">
+                                        <button class="dark">
                                             <img src="./images/theme/dark.png" alt="default btn group">
                                         </button>
                                         <span>기본</span>
                                     </div>
                                     <div class="theme-btn">
-                                        <button class="default">
+                                        <button class="clean">
                                             <img src="./images/theme/clean.png" alt="default btn group">
                                         </button>
                                         <span>클린</span>
@@ -253,12 +268,99 @@
                                                 <img src="./images/icon/ico-minus.svg" alt="minus icon">
                                             </button>
                                         </div>
+                                        <div class="screenshot-item swiper-slide">
+                                            <img src="./images/screenshot/img02.png" alt="screenshot">
+                                            <button class="remove-btn">
+                                                <img src="./images/icon/ico-minus.svg" alt="minus icon">
+                                            </button>
+                                        </div>
+                                        <div class="screenshot-item swiper-slide">
+                                            <img src="./images/screenshot/img02.png" alt="screenshot">
+                                            <button class="remove-btn">
+                                                <img src="./images/icon/ico-minus.svg" alt="minus icon">
+                                            </button>
+                                        </div>
+                                        <div class="screenshot-item swiper-slide">
+                                            <img src="./images/screenshot/img02.png" alt="screenshot">
+                                            <button class="remove-btn">
+                                                <img src="./images/icon/ico-minus.svg" alt="minus icon">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <h3>스토어 출시</h3>
+                        <ul class="store-list">
+                            <li>
+                                <div class="store-wrap">
+                                    <div class="store-top">
+                                        <span class="blue-style">앱 제작중</span>
+                                    </div>
+                                    <div class="store-content">
+                                        <img src="./images/visual/app01.png" alt="app icon">
+                                        <p>
+                                            <img src="./images/visual/appStore.svg" alt="appStore icon">
+                                            애플 앱스토어
+                                        </p>
+                                    </div>
+                                    <div class="store-btn">
+                                        <button class="launched-btn">
+                                            출시하기
+                                        </button>
+                                    </div>
+                                    <p>
+                                        앱 제작중입니다
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="active">
+                                <div class="store-wrap">
+                                    <div class="store-top">
+                                        <span class="red-style">앱 제작중</span>
+                                        <button class="change-btn">
+                                            <img src="./images/icon/ico-change.svg" alt="change icon">
+                                            비공개로 전환
+                                        </button>
+                                    </div>
+                                    <div class="store-content">
+                                        <img src="./images/visual/app02.png" alt="app icon">
+                                        <p>
+                                            <img src="./images/visual/googlePlay.svg" alt="googlePlay icon">
+                                            구글 플레이스토어
+                                        </p>
+                                    </div>
+                                    <div class="store-btn">
+                                        <a class="store-link" href="#" target="_blank">
+                                            <img src="./images/icon/ico-link.svg" alt="icon link">
+                                            스토어 바로가기
+                                        </a>
+                                        <button class="link-copy-btn">
+                                            <img src="./images/icon/ico-copy.svg" alt="copy icon">
+                                            링크복사
+                                        </button>
                                     </div>
                                 </div>
                             </li>
                         </ul>
                     </div>
+                    <div class="right">
+                        <div class="appSetting-example">
+                            <div class="phone">
+                                <img src="./images/visual/phone.png" alt="phone">
+                                <div class="phone-bar">
+                                    <img src="./images/visual/phone-bar-default.png" alt="phone bar">
+                                </div>
+                                <div class="phone-screenshot">
+                                    <img src="./images/screenshot/screenshot-example01.png" alt="screenshot">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <button class="save-btn">
+                    저장하기
+                </button>
             </div>
         </section>
     </main>
@@ -268,5 +370,6 @@
     <script src="./js/btnClick.js"></script>
     <script src="./js/select.js"></script>
     <script src="./js/swiper.js"></script>
+    <script src="./js/appSetting.js"></script>
 </body>
 </html>
