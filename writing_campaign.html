@@ -58,7 +58,7 @@
                 </button>
                 <ul class="campaign-list">
                     <li class="active">
-                        <a href="#">
+                        <div class="campaign-list-item">
                             <div class="top">
                                 <div class="left">
                                     <span>
@@ -97,10 +97,10 @@
                                     <span>5+</span>
                                 </li>
                             </ul>
-                        </a>
+                        </div>
                     </li>
                     <li class="active">
-                        <a href="#">
+                        <div class="campaign-list-item">
                             <div class="top">
                                 <div class="left">
                                     <span>
@@ -117,7 +117,7 @@
                                     </div>
                                 </div>
                                 <div class="right">
-                                    <button class="targeting-modify-btn">A/B테스트 수정</button>
+                                    <button class="abTest-modify-btn">A/B테스트 수정</button>
                                 </div>
                             </div>
                             <ul class="campaign-tag">
@@ -130,10 +130,10 @@
                                     <span>문구의 차이</span>
                                 </li>
                             </ul>
-                        </a>
+                        </div>
                     </li>
                     <li>
-                        <a href="#">
+                        <div class="campaign-list-item">
                             <div class="top">
                                 <div class="left">
                                     <span>
@@ -149,13 +149,13 @@
                                     </div>
                                 </div>
                                 <div class="right">
-                                    <button class="targeting-modify-btn">콘텐츠 수정</button>
+                                    <button class="content-setting-btn">콘텐츠 설정</button>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </li>
                     <li>
-                        <a href="#">
+                        <div class="campaign-list-item">
                             <div class="top">
                                 <div class="left">
                                     <span>
@@ -171,10 +171,10 @@
                                     </div>
                                 </div>
                                 <div class="right">
-                                    <button class="targeting-modify-btn">발송 스케쥴 설정</button>
+                                    <button class="schedule-setting-btn">발송 스케쥴 설정</button>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -182,5 +182,150 @@
     </main>
     <!-- <p class="pos-text">기분이 좋아지는 걸 떠올리고 하루종일 반복하여 생각하세요.</p> -->
     <img class="pos-img" src="./images/visual/bg-text.png" alt="bg text">
+
+
+    <div class="popup" id="contentSettingPopup">
+        <div class="popup-header">
+            <div class="popup-title">
+                <h3>
+                    03
+                    <span>콘텐츠 입력하기</span>
+                </h3>
+            </div>
+            <div class="popup-menu">
+                <div class="toggle">
+                    <div class="toggle-btn-wrap">
+                        <button class="toggle-btn"></button>
+                    </div>
+                    A/B 테스트
+                </div>
+                <button class="success-btn">
+                    설정 완료
+                </button>
+            </div>
+        </div>
+        <div class="popup-content">
+            <div class="content-input">
+                <button class="toggle-content-header active hide">
+                    <span class="orange-style">Version A</span>
+                    <p>쇼핑지원 쿠폰이 발급되었습니다 💌</p>
+                    <img src="./images/icon/ico-toggle-arrow.svg" alt="toggle arrow">
+                </button>
+                <div class="toggle-content01">
+                    <ul>
+                        <li>
+                            <h4>제목을 입력해주세요.</h4>
+                            <input type="text" id="content-title1" class="content-title">
+                        </li>
+                        <li>
+                            <h4>내용을 입력해주세요.</h4>
+                            <textarea id="content-desc1" class="content-desc"></textarea>
+                        </li>
+                        <li>
+                            <h4>이동링크를 입력해주세요.</h4>
+                            <input type="text" id="content-link1" class="content-link">
+                        </li>
+                        <li>
+                            <h4>썸네일</h4>
+                            <input type="file" id="content-img1" class="content-img">
+                            <label for="content-img1">
+                                <span>
+                                    <img src="./images/icon/ico-imgFile.svg" alt="img file icon">
+                                    업로드
+                                </span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <button class="toggle-content-header hide">
+                    <span class="black-style">Version A</span>
+                    <p>내용을 펼쳐서 기입해주세요</p>
+                    <img src="./images/icon/ico-toggle-arrow.svg" alt="toggle arrow">
+                </button>
+                <div class="toggle-content02">
+                    <ul>
+                        <li>
+                            <h4>제목을 입력해주세요.</h4>
+                            <input type="text" id="content-title2" class="content-title">
+                        </li>
+                        <li>
+                            <h4>내용을 입력해주세요.</h4>
+                            <textarea id="content-desc2" class="content-desc"></textarea>
+                        </li>
+                        <li>
+                            <h4>이동링크를 입력해주세요.</h4>
+                            <input type="text" id="content-link2" class="content-link">
+                        </li>
+                        <li>
+                            <h4>썸네일</h4>
+                            <input type="file" id="content-img2" class="content-img">
+                            <label for="content-img2">
+                                <span>
+                                    <img src="./images/icon/ico-imgFile.svg" alt="img file icon">
+                                    업로드
+                                </span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-example">
+                <div class="example-img">
+                    <img src="./images/visual/phone02.png" alt="phone img">
+                </div>
+                <span class="example-tag hide orange-style">
+                    Version A
+                </span>
+                <div class="example-content">
+                    <div class="example-item">
+                        <span class="example-pos-text">방금 전</span>
+                        <div class="top">
+                            <img src="./images/icon/ico-logo.svg" alt="logo">
+                            릴로
+                        </div>
+                        <div class="example-desc">
+                            <div class="thumbnail">
+                                <img src="./images/visual/thumbnail-img01.png" alt="thumbnail">
+                            </div>
+                            <h3 class="example-title">
+                                쇼핑지원 쿠폰이 발급되었습니다 💌
+                            </h3>
+                            <p class="example-text">
+                                장바구니에 들어간지 오래된 제품이 있어요!
+                                구매할지 고민중이신가요? 쇼핑 지원 쿠폰을 드릴게요❤️                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <span class="example-tag hide black-style">
+                    Version B
+                </span>
+                <div class="example-content">
+                    <div class="example-item">
+                        <span class="example-pos-text">방금 전</span>
+                        <div class="top">
+                            <img src="./images/icon/ico-logo.svg" alt="logo">
+                            릴로
+                        </div>
+                        <div class="example-desc">
+                            <div class="thumbnail">
+                                <img src="./images/visual/thumbnail-img01.png" alt="thumbnail">
+                            </div>
+                            <h3 class="example-title">
+                                쇼핑지원 쿠폰이 발급되었습니다 💌
+                            </h3>
+                            <p class="example-text">
+                                장바구니에 들어간지 오래된 제품이 있어요!
+                                구매할지 고민중이신가요? 쇼핑 지원 쿠폰을 드릴게요❤️                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dim"></div>
+
+    <script src="./js/writing_campaign.js"></script>
 </body>
 </html>

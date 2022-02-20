@@ -36,7 +36,6 @@ $(document).ready(function(){
         var file = appIcon[0].files[0];
         if(file){
             appExampleIcon.attr("src",URL.createObjectURL(file))
-            console.log(URL.createObjectURL(file));
         }
     });
     
