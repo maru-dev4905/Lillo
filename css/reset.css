@@ -49,6 +49,7 @@ table {
     padding: 0;
     box-sizing: border-box;
     font-family: "Spoqa Han Sans Neo";
+    -webkit-font-smoothing: antialiased; 
 }
 a{
     color: inherit;
